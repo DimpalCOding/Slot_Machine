@@ -1,6 +1,5 @@
 import random
 
-
 MAX_LINES = 5
 MAX_BET= 100
 MIN_BET = 10
@@ -23,7 +22,6 @@ symbol_value= {
     "D": 2
 }
 
-
 def check_winnings(columns, lines, bet, values):
     winnings = 0
     for line in range(lines):
@@ -36,7 +34,6 @@ def check_winnings(columns, lines, bet, values):
             winnings +=values[symbol]*bet
     
     return winnings           
-
 
 #outcome of slot Machine
 def spin_slot_machine(rows, cols, symbols):
@@ -60,7 +57,6 @@ def spin_slot_machine(rows, cols, symbols):
         
     return columns
 
-
 def print_slot_machine(columns):
     for row in range(len(columns[0])):
         for i , column in enumerate(columns):
@@ -70,9 +66,7 @@ def print_slot_machine(columns):
                 print(column[row], end= "")
                 
         print()
-                
-                
-                
+                                
 def deposit():
     # we made function to collect user input
     while True:
@@ -100,8 +94,7 @@ def get_number_of_line():
            else:
                print("Enter valid number of lines.")
         else:
-            print("Please enter a number.")
-            
+            print("Please enter a number.")     
     return lines
 
 def get_bet(): #basically asking user what they would like to bet on each line
@@ -132,16 +125,15 @@ def slotMachineGame(balance):
               break
           
        print(f"You are betting Rs. {bet} on {lines}. Total bet is equal to: Rs. {total_bet}")
-       
-       
+        
        slots= spin_slot_machine(ROWS,COLS, symbol_count)
        print_slot_machine(slots)
        winnings= check_winnings(slots, lines, bet, symbol_value)
        print(f"You won Rs. {winnings}")     
  
        return winnings -total_bet
-def main():
     
+def main():
      balance = deposit()  #calling a function
      while True:
          print(f"Current Balance is Rs. {balance}")

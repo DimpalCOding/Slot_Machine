@@ -1,7 +1,7 @@
 # Slot_Machine
 A simple slot machine project implemented in Python. This project allows users to deposit money, place bets across multiple lines, spin the slot machine, and calculate winnings based on symbol values.
 
-# 🎮 Features
+#  Features
 
 - **Deposit System:** Users can deposit an initial balance before playing.
 
@@ -16,7 +16,7 @@ A simple slot machine project implemented in Python. This project allows users t
 - **Quit Option:** Exit the game anytime by pressing q.
 
 
-# 🧩 Symbols and Values
+#  Symbols and Values
 
     A → Count: 2, Value: 5
 
@@ -28,7 +28,7 @@ A simple slot machine project implemented in Python. This project allows users t
 
 _Symbol frequency determines how often each symbol appears in spins, while symbol value determines payout._
 
-# ⚙️ How It Works
+#  How It Works
 
 - **_Deposit Balance:_** Enter the amount you want to start with.
 
@@ -43,7 +43,7 @@ _Symbol frequency determines how often each symbol appears in spins, while symbo
 - _**Balance Update:**_ Your balance is adjusted based on winnings minus total bet.
 
 
-# 📂 Project Structure
+#  Project Structure
 
 - **SlotMachine.py →** Main game logic and functions.
 - **deposit() →** Handles user deposits.
@@ -55,7 +55,7 @@ _Symbol frequency determines how often each symbol appears in spins, while symbo
 - **slotMachineGame() →** Runs a single round of the game.
 - **main() →** Entry point for the game loop.
 
-# 📌 Example Gameplay
+#  Example Gameplay
 
     What would you like to deposit? Rs. 100
 
@@ -73,13 +73,10 @@ _Symbol frequency determines how often each symbol appears in spins, while symbo
     You won Rs. 100
     Current Balance is Rs. 140
 
-# 💡 Future Improvements
+#  Future Improvements
 
 - Add more symbols and paylines.
 - Implement graphical interface (GUI).
 - Track game history and statistics.
 - Add sound effects for spins and wins.
 
-# 👨‍💻 Author
-
- A beginner friendly Python project to practice loops, functions, and user input handling.
